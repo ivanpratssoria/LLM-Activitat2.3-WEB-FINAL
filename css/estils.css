@@ -1,0 +1,317 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ffff00;
+    color: #111;
+    font: 12px Georgia, "Times New Roman", serif;
+}
+
+
+.pagina {
+    width: 79.2%;
+    max-width: 960px;
+    margin: 5px auto 0;
+    background: #eee;
+}
+
+
+header {
+    height: 44px;
+    background: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 155px;
+    height: auto;
+    max-height: 42px;
+    object-fit: contain;
+}
+
+
+nav {
+    height: 37px;
+    border-top: 11px solid #eee;
+    background: #666;
+    text-align: center;
+    padding: 5px 0;
+}
+
+nav a {
+    margin: 0 9px;
+}
+
+
+a {
+    color: #d59a27;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #111;
+    border: 1px solid #111;
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 10px 12px 9px;
+}
+
+h1 {
+    font-size: 18px;
+    color: #28728a;
+    margin: 1px 0 11px;
+}
+
+h3 {
+    font-size: 13px;
+    margin: 11px 0 6px;
+}
+
+p {
+    line-height: 1.08;
+    margin: 8px 0;
+    text-align: justify;
+}
+
+.introduccio p {
+    font-weight: bold;
+}
+
+.data {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    padding: 9px 0;
+    margin: 13px 0 5px;
+}
+
+.data img {
+    height: 12px;
+    vertical-align: middle;
+}
+
+
+figure {
+    margin: 5px auto 10px;
+    text-align: center;
+}
+
+.principal {
+    display: block;
+    width: 54%;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+
+.tweet {
+    width: 328px;
+    max-width: 100%;
+    min-height: 0;
+    margin: 9px 0 7px;
+}
+
+.tweet blockquote {
+    background: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.tweet-link {
+    display: block;
+    border: 0;
+}
+
+.tweet-link:hover {
+    border: 0;
+}
+
+.tweet img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.enllac {
+    margin: 8px 0;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 25px;
+    margin: 8px 0;
+}
+.mes:hover {
+    color: white;
+}
+
+footer {
+    background: #9652b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    min-height: 105px;
+    padding: 8px;
+}
+
+footer img {
+    max-width: 225px;
+    max-height: 85px;
+    object-fit: contain;
+}
+
+footer a:last-child img {
+    width: 145px;
+    max-height: 90px;
+}
+
+@media (max-width: 650px) {
+
+    .pagina {
+        width: 95%;
+    }
+
+    .principal {
+        width: 95%;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    footer img {
+        max-width: 130px;
+    }
+
+}
+.mes {
+    display: block;
+    width: 125px;
+    margin: 5px auto;
+    text-align: center;
+    background-color: #666;
+    color: #d59a27;
+    text-decoration: underline;
+}
+
+
+
+.contingut-arcs {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.llista-arcs {
+    width: 235px;
+    flex-shrink: 0;
+}
+
+
+.sagues {
+    list-style-type: none;
+    padding-left: 25px;
+    margin: 8px 0;
+}
+
+.sagues > li {
+    position: relative;
+    margin-bottom: 3px;
+}
+
+
+
+.sagues > li {
+    position: relative;
+}
+
+
+.sagues > li::after {
+    content: none;
+}
+
+
+.sagues > li::after {
+    content: none;
+}
+
+
+.sagues strong {
+    color: #008b8b;
+}
+
+
+.sagues ol {
+    list-style-type: decimal;
+    padding-left: 30px;
+    margin: 5px 0;
+}
+
+.sagues ol li {
+    margin: 0;
+}
+
+
+.imatges-arcs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.imatges-arcs {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.imatges-arcs img {
+    width: 650px;
+    height: 800px;
+    max-width: 100%;
+    max-height: 265px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+@media (max-width: 650px) {
+
+    .contingut-arcs {
+        flex-direction: column;
+    }
+
+    .llista-arcs {
+        width: 100%;
+    }
+
+    .imatges-arcs img {
+        width: 100%;
+        height: auto;
+    }
+}
+.icona-cine {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.sagues > li::before,
+.sagues > li::after {
+    display: none;
+}
+
